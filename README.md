@@ -1,2 +1,1 @@
-# cpat
-C Personal Attendance Tracker
+wish i'd made it sooner 😔
