@@ -1,0 +1,5 @@
+Mon = F, C, C, Disc, Calc, VAC, VAC
+Tue = C, C, GE, GE, Disc, SEC, SEC
+Wed = F, F, Calc, Calc, GE, F, F
+Thu = F, F, C, C, GE, GE, SAC
+Fri = Disc, Disc, GE, GE, C, VAC, VAC

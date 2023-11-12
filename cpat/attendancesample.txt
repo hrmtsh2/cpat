@@ -1,0 +1,5 @@
+TotalDays = 6
+AttendDays = 4
+SkipDays = 2
+OffDays = 2
+LastAttend = Sun Nov 12 05:22:17 2023

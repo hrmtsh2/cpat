@@ -1,0 +1,16 @@
+C Personal Attendance Tracker
+---------------------
+
+1. Console based attendance tracking program with options.
+2. This page shows all the available commands with usage.
+3. a) -e --enter <rows> - Enter a row (a day's periods) to the set timetable.
+   b) -t --timetable <days> - View the timetable for all days in <days>. Show entire timetable by default.
+   c) -a --attend <classes> - Attend all classes in <classes> for that day. Attend all by default.
+   e) -l --leave <classes> - Skip all classes in <classes> for that day. Skip all by default.
+   g) -v --view - View attendances (overall and subjectwise) till now for the set timetable. (default option is -v)
+   h) -h --help - Show this help page ;)
+   i) -o --off <days> - Mark all days (subsequent days in the week) in <days> as offs (hence making them ineligible for attendance calculation considerations).
+   j) [UPCOMING] -c --canceled <classes> - Mark all classes in <classes> as off/canceled for today.
+   k) NO OPTION - View attendances (overall and subjectwise) till now for the set timetable. (default option is -v)
+   l) -s --sett "<timetable_file_path>" - Set a timetable file as the timetable. [UPCOMING] This will also cause a subwise.txt file to be generated (which has all the subjects extracted from the timetable file).
+   
