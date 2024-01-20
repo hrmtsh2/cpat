@@ -1,5 +1,0 @@
-TotalDays = 2
-AttendDays = 2
-SkipDays = 0
-OffDays = 0
-LastAttend = Fri Jan 19 08:22:17 2024

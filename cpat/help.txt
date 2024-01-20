@@ -1,9 +1,9 @@
 C Personal Attendance Tracker
----------------------
+-------------------------------
 
 1. Console based attendance tracking program with options.
 2. This page shows all the available commands with usage.
-3. a) -e --enter <rows> - Enter a row (a day's periods) to the set timetable.
+   a) -e --enter <row> - Enter a row (a day's periods) to the set timetable.
    b) -t --timetable <days> - View the timetable for all days in <days>. Show entire timetable by default.
    c) -a --attend <classes> - Attend all classes in <classes> for that day. Attend all by default.
    e) -l --leave <classes> - Skip all classes in <classes> for that day. Skip all by default.
