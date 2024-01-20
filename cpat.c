@@ -6,12 +6,12 @@
 
 #include <stdio.h>  // FILE, fopen, printf, scanf, sscanf
 #include <stdlib.h> // exit
-#include <string.h> // strncat, strcat, strcmp, strtok, strlen, strncmp
+#include <string.h> // strncat, strcat, strcmp, strtok, strlen, strncmp, strcpy
 #include <time.h> // struct tm, time_t, time, localtime, asctime
 
 #define MAXARGSIZE 100 // Maximum no. of characters in an argument to an option.
 #define MAXLINESIZE 100 // Maximum no. of characters in a line of a file.
-#define MAXFILESIZE 100 // Maximum no. of total characters in a file.
+#define MAXFILESIZE 500 // Maximum no. of total characters in a file.
 
 char timetablePath[MAXARGSIZE] = "timetable.txt";
 // char attendanceFilePath[MAXARGSIZE] = "attendancesample.txt"; // For testing only
@@ -390,8 +390,8 @@ int main(int argc, char *argv[]){
 	// showAttendance() is called when no argument is provided
 	if(argc == 1){
 		showAttendance();
-		printf("\n\n");
-		showHelp("");
+		// printf("\n\n");
+		// showHelp("");
 		attendanceShown = 1;
 		exit(1);
 	}
@@ -404,41 +404,45 @@ int main(int argc, char *argv[]){
 
 	char *option = argv[1];
 	if(isequal(option, "-t")  || isequal(option, "--timetable")){
-		char *days;
+		char days[MAXARGSIZE];
 		if(argc == 3){
-			days = argv[2];
+			// days = argv[2];
+			strcpy(days, argv[2]);
 		} else if(argc == 2){
-			days = "";
+			strcpy(days, "");
 		} else {
 			printf("Incorrect command usage. See help.\n");
 		}
 		showTimetable(days);
 	} else if(isequal(option, "-e") || isequal(option, "--enter")) {
-		char *row;
+		char row[MAXARGSIZE];
 		if(argc == 3){
-			row = argv[2];
+			// row = argv[2];
+			strcpy(row, argv[2]);
 		} else {
 			printf("Incorrect command usage. See help..\n");
 			exit(1);
 		}
 		enterRow(row);
 	} else if(isequal(option, "-a") || isequal(option, "--attend")) {
-		char *classes;
+		char classes[MAXARGSIZE];
 		if(argc == 3){
-			classes = argv[2];
+			// classes = argv[2];
+			strcpy(classes, argv[2]);
 		} else if(argc == 2){
-			classes = "";
+			strcpy(classes, "");
 		} else {
 			printf("Incorrect command usage. See help.\n");
 			exit(1);
 		}
 		attendClass(classes);		
 	} else if(isequal(option, "-l") || isequal(option, "--leave")) {
-		char *classes;
+		char classes[MAXARGSIZE];
 		if(argc == 3){
-			classes = argv[2];
+			// classes = argv[2];
+			strcpy(classes, argv[2]);
 		} else if(argc == 2){
-			classes = "";
+			strcpy(classes, "");
 		} else {
 			printf("Incorrect command usage. See help (-h or --help).\n");
 			exit(1);
@@ -447,19 +451,21 @@ int main(int argc, char *argv[]){
 	} else if(isequal(option, "-v") || isequal(option, "--view")) {
 		showAttendance();
 	} else if(isequal(option, "-h") || isequal(option, "--help")) {
-		char *command;
+		char command[MAXARGSIZE];
 		if(argc == 3){
-			command = argv[2];
+			// command = argv[2];
+			strcpy(command, argv[2]);
 		} else {
-			command = "";
+			strcpy(command, "");
 		}
 		showHelp(command);
 	} else if(isequal(option, "-o") || isequal(option, "--off")) {
-		char *classes;
+		char classes[MAXARGSIZE];
 		if(argc == 3){
-			classes = argv[2];
+			// classes = argv[2];
+			strcpy(classes, argv[2]);
 		} else if(argc == 2){
-			classes = "";
+			strcpy(classes, "");
 		} else {
 			printf("Incorrect command usage. See help (-h or --help).\n");
 			exit(1);

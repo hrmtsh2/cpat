@@ -1,5 +1,5 @@
 C Personal Attendance Tracker
----------------------
+-------------------------------
 
 1. Console based attendance tracking program with options.
 2. This page shows all the available commands with usage.
