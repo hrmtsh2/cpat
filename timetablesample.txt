@@ -1,0 +1,5 @@
+Mon = LA, LA, DS, DS, GE, SEC, SEC
+Tue = DS, DS, LA, LA, GE, GE, VAC
+Wed = OOP, OOP, SEC, SEC, GE, F, F
+Thu = DS, DS, GE, GE, OOP, LA, F
+Fri = AEC, AEC, OOP, OOP, VAC, VAC, F
