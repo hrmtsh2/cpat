@@ -13,11 +13,11 @@
 #define MAXLINESIZE 100 // Maximum no. of characters in a line of a file.
 #define MAXFILESIZE 500 // Maximum no. of total characters in a file.
 
-char timetablePath[MAXARGSIZE] = "timetable.txt";
-// char attendanceFilePath[MAXARGSIZE] = "attendancesample.txt"; // For testing only
-char attendanceFilePath[MAXARGSIZE] = "attendance.txt";
-// char subwiseFilePath[MAXARGSIZE] = "subwise.txt"; TODO
-char helpFilePath[MAXARGSIZE] = "help.txt";
+char timetablePath[MAXARGSIZE] = "txt_files/timetable.txt";
+// char attendanceFilePath[MAXARGSIZE] = "txt_files/attendancesample.txt"; // For testing only
+char attendanceFilePath[MAXARGSIZE] = "txt_files/attendance.txt";
+// char subwiseFilePath[MAXARGSIZE] = "txt_files/subwise.txt"; TODO
+char helpFilePath[MAXARGSIZE] = "txt_files/help.txt";
 
 char today[4]; // Today's Day three letters (+ null terminator)
 char todate[30]; // Today's entire date-time (ascdate())
